@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="theme-color" content="#000">
+	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="icon" href="media/mega/img/favicon.ico">
+	<title>Hackaton - login - верстка cтраницы</title>
+</head>
+<body>
+  <div class="login-page">
+    <main class="login-page--container">
+      <img class="login-page--logo" src="media/mega/img/logo.svg" />
+    </main>
+    <aside class="login-page--aside">
+
+      <form action="#" class="login-page--form form">
+        <h3 class="login-page--title">Вход в виртуальную АТС</h3>
+        <div class="form-field"> <!-- .error - навешивается если поле не прошло валидацию -->
+          <input class="inp" type="text" id="login" placeholder="Логин ВАТС" />
+          <div class="error-text">Вы не ввели логин</div>
+        </div>
+        <div class="form-field error">
+          <input class="inp" type="password" id="password" placeholder="Пароль" />
+          <div class="error-text">Неверный логин или пароль.</div>
+        </div>
+        <div class="m30">
+          <input type="submit" class="submit" value="Войти" />
+        </div>
+        <div class="m20">
+          <a href="#forgot" class="bb">Забыли пароль?</a>
+        </div>
+        <div class="m20">
+          <a href="#loginprofile" class="bb">Войти через Профиль МегаФон Бизнес</a>
+        </div>
+      </form>
+
+      <hr>
+
+      <div class="login-page--info">
+        <div class="title m15">
+          Мобильное приложение
+        </div>
+        <div class="text m15">
+          Онлайн статистика по звонкам и эффективности сотрудников в удобном формате, в любом месте 
+          и в любое время!
+        </div>
+        <div class="box m30">
+          <div class="box-a">
+            <img src="media/mega/img/login-barcode@3x.png" alt="" class="barcode" />
+          </div>
+          <div class="box-b">
+            <div class="">
+              <img src="media/mega/img/login-app-appstore.svg" class="m10" alt="appstore">
+            </div>
+            <div class="">
+              <img src="media/mega/img/login-app-gplay.svg" alt="google play">
+            </div>
+          </div>
+        </div>
+        <div class="m20">
+          Cлужба поддержки: <a href="tel:88005500500" class="tel bb">8 800 550-05-00</a>
+        </div>
+        <div class="m10">
+          <a href="#faq" class="bb">Часто задаваемые вопросы</a>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>

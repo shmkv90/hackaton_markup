@@ -3,27 +3,30 @@
 @import "fonts";
 
 @import "common";
-@import "ui/list-editor";
-@import "ui/list-editor-flex";
+@import "pages/login.scss";
+@import "pages/departments-list.scss";
+@import "pages/departments-edit.scss";
+
+@import "ui/buttons";
+@import "ui/forms";
+
+// @import "ui/list-editor";
+// @import "ui/list-editor-flex";
 
 
 html {
-  background-color: rgba(41, 180, 204, 0.1);
-  background-color: rgb(72, 128, 138);
-  background-color: rgb(35, 41, 42);
+  background-color: rgb(86, 101, 104);
   height: 100%;
 }
 
 body {
   background: linear-gradient(60deg, rgba(102, 192, 109, 0.33) 0%, rgba(148,187,233,0.66) 100%);
-  padding: 1em;
   min-height: 100%;
-  box-sizing: border-box;
   transition: .66s;
-  margin-right: auto;
-  margin-left: auto;
-  padding-top: 1.5em;
-  padding-bottom: 2.5em;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .h3 {
@@ -45,7 +48,6 @@ nav {
       a {
         text-decoration: none;
         color: rgb(0, 184, 0) !important;
-        border-bottom: 1px dotted rgb(0, 184, 0);
         
         &:hover {
           text-decoration: underline;

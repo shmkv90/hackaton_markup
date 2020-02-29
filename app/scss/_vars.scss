@@ -1,14 +1,19 @@
 
 // Colors
 
-$white:     #ffffff;
-$black:     #000000;
-$gray:      #828282;
-$pale-gray: #f1f1f1;
-$light-gray:#E0E0E0;
-$blue:      #4F5BFB;
-$light-blue:rgb(97, 108, 255);
-$warning:   #eb5757;
+$white:       #ffffff;
+$black:       #333333;
+$green:       #00b956;
+$purple:      #731982;
+$dark-purple: #62096e;
+$light-purple:#b808d4;
+$gray:        #5c5c5c;
+$light-gray:  #d9d9d9;
 
-$link-color: $blue;
-$hovered-link-color: $light-blue;
+$pale-gray:   #f1f1f1;
+$blue:        #4F5BFB;
+$light-blue:  rgb(97, 108, 255);
+$warning:     #f13e3e;
+
+$link-color: $purple;
+$hovered-link-color: $light-purple;
