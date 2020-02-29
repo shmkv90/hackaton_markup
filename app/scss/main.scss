@@ -3,65 +3,10 @@
 @import "fonts";
 
 @import "common";
-@import "pages/login.scss";
-@import "pages/departments-list.scss";
-@import "pages/departments-edit.scss";
+@import "layout";
+@import "pages/login";
+@import "pages/groups";
 
 @import "ui/buttons";
 @import "ui/forms";
-
-// @import "ui/list-editor";
-// @import "ui/list-editor-flex";
-
-
-html {
-  background-color: rgb(86, 101, 104);
-  height: 100%;
-}
-
-body {
-  background: linear-gradient(60deg, rgba(102, 192, 109, 0.33) 0%, rgba(148,187,233,0.66) 100%);
-  min-height: 100%;
-  transition: .66s;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.h3 {
-  color: #ffffff;
-}
-
-nav {
-  padding-bottom: 2em;
-  padding-right: 4em;
-
-  ul {
-    display: flex;
-    justify-content: flex-end;
-
-    li {
-      padding-left: 1em;
-      padding-right: 1em;
-
-      a {
-        text-decoration: none;
-        color: rgb(0, 184, 0) !important;
-        
-        &:hover {
-          text-decoration: underline;
-          color: rgb(0, 240, 0) !important;
-        }
-      }
-      &.active {
-        a {
-          color: rgb(27, 114, 255);
-          &:hover {
-            text-decoration: none;
-          }
-        }
-      }
-    }
-  }
-}
+@import "ui/list-editor";

@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="theme-color" content="#000">
+	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="icon" href="assets/favicon.ico">
+	<title>Hackaton - departments-list</title>
+</head>
+<body>
+	<div id="app">
+		<div class="main-layout">
+			<aside class="aside">
+				<div class="aside--logo">
+					<img src="assets/logo-white.svg">
+				</div>
+				<nav class="aside-nav">
+					<a class="aside-nav--item history-item" href="#">
+						<img src="assets/icon-history.svg">
+						<span>История</span>
+					</a>
+					<div class="aside-nav--item statistics-item" href="#">
+						<img src="assets/icon-statistics.svg">
+						<span>Статистика</span>
+					</div>
+					<a class="aside-nav--item help-item" href="#">
+						<img src="assets/icon-help.svg">
+						<span>Справка</span>
+					</a>
+					<a class="aside-nav--item settings-item active" href="#">
+						<img src="assets/icon-settings.svg">
+						<span>Настройки</span>
+					</a>
+				</nav>
+			</aside>
+			<main class="main">
+				<div class="header">
+					<div class="header--breadcrumbs"><!-- dummy --> <img src="assets/_header-left.png" alt="">	</div>
+					<div class="header--client"><!-- dummy --> <img src="assets/_header-right.png" alt=""> </div>
+				</div>
+				<div class="content">
+
+					<div class="groups-page">
+						<div class="topnav">
+							<div class="topnav--left"><!-- dummy --> <img src="assets/_topnav-left.png" alt=""> </div>
+							<div class="topnav--client"><!-- dummy --> <img src="assets/_topnav-right.png" alt=""></div>
+						</div>
+						<div class="groups-list">
+
+							<div class="list-editor">
+								<div class="list-editor--status">
+									<a class="btn-add" href="#">
+										Добавить отдел
+									</a>
+									<div class="items">
+										<span class="item-numbers">3</span>
+										<span class="item-word">отдела</span>
+									</div>
+								</div>
+
+								<div class="list__flex template-1">
+									<div class="item">
+										<div class="cell-a">
+											<div class="title">Отдел по работе с корпоративными клиентами</div>
+											<div class="m20">Сотрудников: <span class="bb">2</span></div>
+											<div class="m20">Внутренний номер: <span class="bb">701</span></div>
+											<div class="m20">Распределение звонков: <span class="bb">всем сразу</span></div>
+											<div class="m25">
+												<a href="#" class="btn-outline-black">Настроить отдел</a>
+											</div>
+										</div>
+										<div class="cell-b">
+											<table class="data-table">
+												<tr class="heading">
+													<th>Сотрудник</th>
+													<th>Должность</th>
+													<th>Добавочный номер</th>
+												</tr>
+												<tr>
+													<td>Пикрия Байтурина</td>
+													<td>Заместитель директора </td>
+													<td>3222</td>
+												</tr>								
+												<tr>
+													<td>Пикрия Байтурина</td>
+													<td>Аудитор</td>
+													<td>3222</td>
+												</tr>								
+												<tr>
+													<td>Пикрия Байтурина</td>
+													<td>Аудитор </td>
+													<td>3222</td>
+												</tr>								
+											</table>
+											<div class="link">Показать всех сотрудников</div>
+										</div>
+									</div>
+									<div class="item">
+										<div class="cell-a">
+											<div class="title">Администрация</div>
+											<div class="m20">Сотрудников: <span class="bb">2</span></div>
+											<div class="m20">Внутренний номер: <span class="bb">100</span></div>
+											<div class="m20">Распределение звонков: <span class="bb">равномерно</span></div>
+											<div class="m25">
+												<a href="#" class="btn-outline-black">Настроить отдел</a>
+											</div>
+										</div>
+										<div class="cell-b">
+											<table class="data-table">
+												<tr class="heading">
+													<th>Сотрудник</th>
+													<th>Должность</th>
+													<th>Добавочный номер</th>
+												</tr>
+												<tr class="big">
+													<td>
+														<div>Пикрия Байтурина</div>
+														<div class="badge-blue">Администратор</div>
+													</td>
+													<td>Заместитель директора </td>
+													<td>3222</td>
+												</tr>														
+												<tr>
+													<td>Пикрия Байтурина</td>
+													<td>Заместитель </td>
+													<td>3222</td>
+												</tr>
+											</table>
+										</div>
+									</div>				
+
+									<div class="item">
+										<div class="cell-a">
+											<div class="title">Дирекция</div>
+											<div class="m20">Нет сотрудников</div>
+											<div class="m20">Внутренний номер: <span class="bb">100</span></div>
+											<div class="m20">Распределение звонков: <span class="bb">равномерно</span></div>
+											<div class="m25">
+												<a href="#" class="btn-outline-black">Настроить отдел</a>
+											</div>
+										</div>
+										<div class="cell-b">
+											<table class="data-table">
+												<tr>
+													<div class="title-red">Отдел не принимает звонки</div>
+													<div class="m20">Добавьте хотя бы одного сотрудника, чтобы отдел мог принимать звонки.</div>
+													<a href="#" class="btn-outline-black">Добавьте сотрудника</a>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+				</div>	
+			</main>
+
+		</div>
+	</div>
+
+	<script src="js/scripts.min.js"></script>
+</body>
+</html>

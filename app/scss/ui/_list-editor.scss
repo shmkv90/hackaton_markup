@@ -1,7 +1,11 @@
 
-.ListEditor {
+// The main idea of flex-grid and support cross-browser prefixes for IE10
+// https://github.com/kristoferjoseph/flexboxgrid/blob/master/dist/flexboxgrid.css
+
+
+.list-editor {
   display: block;
-  width: 1125px;
+  width: 100%;
 
   .item {
     > div {
@@ -12,46 +16,180 @@
     }
   }
 
-  .add {
-    display: inline-block;
-    color: limegreen;
-    border-bottom: 1px dotted limegreen;
-    text-decoration: none;
+  &--status {
+    display: flex;
+
+    .btn-add {
+      @extend .btn-solid-purple, .btn-small, .btn-size_auto;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-bottom: 15px;
+    }
+    .items {
+      padding-top: 12px;
+      font-size: 13px;
+      margin-left: auto;
+    }
   }
+
+  .list__flex {
+    .item {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &.template-1 {
+      font-size: 15px;
+      color: #333333;
+
+      .item {
+        padding-top: 15px;
+        padding-bottom: 1px;
+        background-color: $white;
+        padding-bottom: 20px;
+        margin-bottom: 25px;
+
+        .cell-a {
+          font-size: 13px;
+          padding-left: 1.3em;
+          border-right: 1px solid $light-gray;
+          max-width: 325px;
+          flex-basis: 325px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          .title {
+            font-size: 17px;
+            font-weight: bold;
+            line-height: 1.5;
+            margin-bottom: 25px;
+          }
+        }
+        .cell-b {
+          max-width: calc(100% - 325px);
+          flex-basis: calc(100% - 325px);
+          padding: 0 20px 0px 20px;
+          justify-self: flex-start;
+          align-items: flex-start;
+          flex-direction: column;
+          font-size: 13px;
+        }
+
+        .data-table {
+          display: table;
+          width: 100%;
+          font-size: 13px;
+          margin-bottom: 15px;
+
+          tr {
+            height: 50px;
+            line-height: 50px;
+            transition: .3s;
+
+            &:last-of-type {
+              border-bottom: none;
+            }
+          }
+          th {
+            color: #9a9a9a;
+            text-align: left;
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+          td {
+            border-bottom: 2px solid $pale-gray;
+            cursor: pointer;
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+          tr:not(.heading):hover {
+            td {
+              border-bottom: 2px solid transparent;
+            }
+            box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+          }
+          tr.big {
+            td {
+              height: 80px;
+              line-height: 60px;
+            }
+          }
+        }
+        .badge-blue {
+          position: absolute;
+          margin-left: 0;
+          margin-top: -14px;
+          height: 16px;
+          line-height: 16px;
+          padding-left: 4px;
+          padding-right: 4px;
+          background-color: #869ef3;
+          text-transform: uppercase;
+          font-size: 9px;
+          letter-spacing: 1.5px;
+          border-radius: 2px;
+          color: $white;
+        }
+        .link {
+          font-size: 13px;
+          color: #008bfb;
+          text-decoration: none;
+          border-bottom: 1px dotted transparent;
+          transition: .15s;
+          cursor: pointer;
+
+          &:hover {
+            color: $light-blue;
+            border-bottom: 1px dotted $light-blue;
+          }
+        }
+        .title-red {
+          color: #f62434;
+          font-size: 17px;
+          font-weight: bold;
+          line-height: 1.5;
+          margin-top: 10px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+
 
   // Служебный класс для подсветки колонок
   // ----------
-  ._highlighted {
+  // ._highlighted {
 
-    .cell-a {
-      background-color: rgba(255, 80, 110, 0.5);
-    }
-    .cell-b {
-      background-color: rgba(130, 60, 255, 0.5);
-    }
-    .cell-c {
-      background-color: rgba(100, 255, 122, 0.5);
-    }
-    .cell-d {
-      background-color: rgba(255, 255, 103, 0.5);
-    }
-    .cell-e {
-      background-color: rgba(104, 255, 233, 0.5);
-    }
-    .cell-f {
-      background-color: rgba(40, 174, 255, 0.5);
-    }    
-    .cell-g {
-      background-color: rgba(255, 234, 40, 0.5);
-    }    
-    .cell-h {
-      background-color: rgba(255, 40, 244, 0.33);
-    }    
-    .cell-y {
-      background-color: rgba(0, 0, 0, 0.25);
-    }
-    .cell-x {
-      background-color: rgba(255, 143, 65, 0.5);
-    }
-  }
+  //   .cell-a {
+  //     background-color: rgba(255, 80, 110, 0.5);
+  //   }
+  //   .cell-b {
+  //     background-color: rgba(130, 60, 255, 0.5);
+  //   }
+  //   .cell-c {
+  //     background-color: rgba(100, 255, 122, 0.5);
+  //   }
+  //   .cell-d {
+  //     background-color: rgba(255, 255, 103, 0.5);
+  //   }
+  //   .cell-e {
+  //     background-color: rgba(104, 255, 233, 0.5);
+  //   }
+  //   .cell-f {
+  //     background-color: rgba(40, 174, 255, 0.5);
+  //   }    
+  //   .cell-g {
+  //     background-color: rgba(255, 234, 40, 0.5);
+  //   }    
+  //   .cell-h {
+  //     background-color: rgba(255, 40, 244, 0.33);
+  //   }    
+  //   .cell-y {
+  //     background-color: rgba(0, 0, 0, 0.25);
+  //   }
+  //   .cell-x {
+  //     background-color: rgba(255, 143, 65, 0.5);
+  //   }
+  // }
 }
